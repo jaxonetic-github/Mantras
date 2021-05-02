@@ -4,7 +4,7 @@
 
 import 'react-native';
 import React from 'react';
-import NakshatraMantras from '../nakshatraMantras.js';
+import NakshatraMantras from '../src/nakshatraMantras.js';
 import { render } from '@testing-library/react-native';
 
 // Note: test renderer must be required after react-native.

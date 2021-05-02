@@ -4,28 +4,23 @@
 
 import 'react-native';
 import React from 'react';
-import DailyMantras from '../src/dailyMantras.js';
+import Home from '../src/home.js';
 import { render } from '@testing-library/react-native';
 
 // Note: test renderer must be required after react-native.
 import renderer from 'react-test-renderer';
 
 it('renders correctly', () => {
-  renderer.create(<DailyMantras />);
-  const { getByText, getAllByText, queryAllByText } = render(<DailyMantras />);
+  renderer.create(<Home />);
+  const { getByText, getAllByText, queryAllByText } = render(<Home />);
   
   //Ensure Title Displays
-  const beejs = queryAllByText('Beej');
+  const beejs = getByText('Mantras are tools of the Manas (mind)');
 console.log(beejs.length);
 //console.log(beejs[0].children);
 //console.log(beejs[0].type);
-  const titlt = queryAllByText('Daily');
-
-  //Ensure Days of the week print
-  getByText('Sunday');getByText('Monday');getByText('Tuesday');getByText('Wednesday');getByText('Thursday');getByText('Friday');getByText('Saturday');
   
   //console.log(element);
  // expect(element).toBe('Sunday');
  // expect(queryBytextV('Sunday')).toBe('ff');
 });
-
