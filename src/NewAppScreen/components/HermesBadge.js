@@ -14,14 +14,14 @@ import {StyleSheet, Text, useColorScheme, View} from 'react-native';
 import Colors from './Colors';
 
 const HermesBadge = (): Node => {
-  const isDarkMode = useColorScheme() === 'dark';
+ // const isDarkMode = useColorScheme() === 'dark';
   return global.HermesInternal ? (
     <View style={styles.badge}>
       <Text
         style={[
           styles.badgeText,
           {
-            color: isDarkMode ? Colors.light : Colors.dark,
+            color: Colors.dark,
           },
         ]}>
         Engine: Hermes

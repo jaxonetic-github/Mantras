@@ -13,7 +13,7 @@ import type {Node} from 'react';
 import {ImageBackground, StyleSheet, Text, useColorScheme} from 'react-native';
 import React from 'react';
 import Colors from './Colors';
-import HermesBadge from './HermesBadge';
+//import HermesBadge from './HermesBadge';
 
 const Header = ({children, title}): Node => {
   const isDarkMode = useColorScheme() === 'dark';
@@ -28,12 +28,11 @@ const Header = ({children, title}): Node => {
         },
       ]}
       imageStyle={styles.logo}>
-      <HermesBadge />
       <Text
         style={[
           styles.text,
           {
-            color: isDarkMode ? Colors.white : Colors.black,
+            color: Colors.black,
           },
         ]}>
         Welcome to
