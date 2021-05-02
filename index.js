@@ -15,9 +15,9 @@ import {
 
 
 import {AppRegistry} from 'react-native';
-import Home from './src/home.js';
-import DailyMantras from './src/dailyMantras.js';
-import Naskshatras from './src/nakshatraMantras.js';
+import Home from './src/home/home.js';
+import DailyMantras from './src/dailyMantras/dailyMantras.js';
+import Naskshatras from './src/nakshatraMantras/nakshatraMantras.js';
 import {name as appName} from './app.json';
 
 import { Navigation } from 'react-native-navigation';
@@ -31,6 +31,7 @@ const HomeScreen = (props) => {
     </View>
   );
 };
+
 HomeScreen.options = {
   topBar: {
     title: {

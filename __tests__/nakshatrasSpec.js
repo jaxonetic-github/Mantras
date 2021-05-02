@@ -4,7 +4,7 @@
 
 import 'react-native';
 import React from 'react';
-import NakshatraMantras from '../src/nakshatraMantras.js';
+import NakshatraMantras from '../src/nakshatraMantras/nakshatraMantras.js';
 import { render } from '@testing-library/react-native';
 
 // Note: test renderer must be required after react-native.
@@ -16,7 +16,7 @@ it('renders correctly', () => {
   
   //Ensure Title Displays
   const beejs = queryAllByText('Beej');
-console.log(beejs.length);
+  console.log(beejs.length);
 //console.log(beejs[0].children);
 //console.log(beejs[0].type);
   const title = queryAllByText('Daily');
