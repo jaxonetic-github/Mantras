@@ -1,0 +1,11 @@
+install:
+    - pip install -r requirements.txt
+
+   script:
+    - py.test  --cov-report term --cov=app/test/
+
+   env:
+    - CODECOV_TOKEN=<token>#IF ONLY YOU HAVE A PRIVATE REPOSITORY
+
+   after_success:
+    - codecov
