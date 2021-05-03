@@ -1,11 +1,9 @@
-install:
-    - pip install -r requirements.txt
+language: node_js 
+node_js:
+ - 14.12.0
+before_install:
+  - npm install -g codecov
+script:
+  - codecov -t 'f9ed55e0-61be-4fb2-89d2-ff95feb0dea7'
 
-   script:
-    - py.test  --cov-report term --cov=app/test/
 
-   env:
-    - CODECOV_TOKEN=<token>#IF ONLY YOU HAVE A PRIVATE REPOSITORY
-
-   after_success:
-    - codecov
