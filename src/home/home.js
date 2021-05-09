@@ -22,7 +22,6 @@ import {
   Colors,
   Header,
 } from '../NewAppScreen';
-'native-base';
 
 import {TXT_MANTRAS_DEFINITION} from '../constants.js';
 import {TXT_MANTRAS_HOWTOUSE} from '../constants.js';
