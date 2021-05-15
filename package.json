@@ -28,7 +28,20 @@
     "metro-react-native-babel-preset": "^0.64.0",
     "react-test-renderer": "17.0.1"
   },
-  "jest": {
+  "jest": { 
+     "preset": "react-native",
+    "cacheDirectory": "./cache",
+    "coverageThreshold": {
+      "global": {
+        "statements": 80
+      }
+    },
+    "globals": {
+      "__DEV__": true
+    },
+    "transformIgnorePatterns": [
+      "node_modules/(?!(jest-)?!react-native|react-clone-referenced-element|@react-native-community|expo(nent)?|@expo(nent)?/.*|react-navigation|@react-navigation/.*|@unimodules/.*|unimodules|sentry-expo|native-base|polyfills|@sentry/.*)"
+    ],
   "coverageDirectory": "./coverage/",
   "collectCoverage": true
 }

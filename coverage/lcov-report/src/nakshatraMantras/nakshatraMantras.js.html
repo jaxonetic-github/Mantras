@@ -176,31 +176,10 @@
 <a name='L117'></a><a href='#L117'>117</a>
 <a name='L118'></a><a href='#L118'>118</a>
 <a name='L119'></a><a href='#L119'>119</a>
-<a name='L120'></a><a href='#L120'>120</a>
-<a name='L121'></a><a href='#L121'>121</a>
-<a name='L122'></a><a href='#L122'>122</a>
-<a name='L123'></a><a href='#L123'>123</a>
-<a name='L124'></a><a href='#L124'>124</a>
-<a name='L125'></a><a href='#L125'>125</a>
-<a name='L126'></a><a href='#L126'>126</a>
-<a name='L127'></a><a href='#L127'>127</a>
-<a name='L128'></a><a href='#L128'>128</a>
-<a name='L129'></a><a href='#L129'>129</a>
-<a name='L130'></a><a href='#L130'>130</a>
-<a name='L131'></a><a href='#L131'>131</a>
-<a name='L132'></a><a href='#L132'>132</a>
-<a name='L133'></a><a href='#L133'>133</a>
-<a name='L134'></a><a href='#L134'>134</a>
-<a name='L135'></a><a href='#L135'>135</a>
-<a name='L136'></a><a href='#L136'>136</a>
-<a name='L137'></a><a href='#L137'>137</a>
-<a name='L138'></a><a href='#L138'>138</a>
-<a name='L139'></a><a href='#L139'>139</a>
-<a name='L140'></a><a href='#L140'>140</a>
-<a name='L141'></a><a href='#L141'>141</a>
-<a name='L142'></a><a href='#L142'>142</a>
-<a name='L143'></a><a href='#L143'>143</a>
-<a name='L144'></a><a href='#L144'>144</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<a name='L120'></a><a href='#L120'>120</a></td><td class="line-coverage quiet"><span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
+<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -283,33 +262,6 @@
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-yes">2x</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
-<span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
 <span class="cline-any cline-neutral">&nbsp;</span>
@@ -378,6 +330,9 @@ import {
   LearnMoreLinks,
   ReloadInstructions,
 } from '../NewAppScreen';
+ 
+ import {NAKSHATRAS_DATA} from '../constants.js' 
+&nbsp;
 &nbsp;
 const Section = ({children, title}): Node =&gt; {
   const isDarkMode = useColorScheme() === 'dark';
@@ -428,36 +383,9 @@ const renderItem = ({ item }) =&gt; (
   return (
     &lt;SafeAreaView style={backgroundStyle}&gt;
       &lt;StatusBar barStyle={ 'dark-content'} /&gt;
+      &lt;Header title='Nakshatras'/&gt;
       &lt;FlatList
-        data={[{id:"1", title:"Ashwini", sign:"Aries",  deity:"Soma", degrees : '00:  00" 00\' to 13:10":20\'', mantras:{beej:'Om Draam Dreem Draum Sah(a) Shukraye Namaha'} },
-               {id:'2', title:'Bharani', sign:'Aries',deity:"Soma", degrees : '00:  00" 00\' to 13:10":20\'', mantras:{beej:'Om Rudraya Namaha'}},
-               {id:'3', title:'Krittika', sign:'Aries',deity:"Soma", degrees : '00:  00" 00\' to 13:10":20\'', mantras:{beej:'Om Rudraya Namaha'}},
-               {id:'4', title:'Mrigashira', sign:'Taurus',deity:"Soma", degrees : '00:  00" 00\' to 13:10":20\'', mantras:{beej:'Om Rudraya Namaha'}},
-               {id:'5', title:'Ardra', sign:'Taurus',deity:"Soma", degrees : '00:  00" 00\' to 13:10":20\'', mantras:{beej:'Om Rudraya Namaha'}},
-               {id:'6', title:'Punarvasu', sign:'Taurus',deity:"Soma", degrees : '00:  00" 00\' to 13:10":20\'', mantras:{beej:'Om Rudraya Namaha'}},
-               {id:'7', title:'Pushya', sign:'Gemini',deity:"Soma", degrees : '00:  00" 00\' to 13:10":20\'', mantras:{beej:'Om Rudraya Namaha'}},
-               {id:'8', title:'Ashlesha', sign:'Gemini',deity:"Soma", degrees : '00:  00" 00\' to 13:10":20\'', mantras:{beej:'Om Rudraya Namaha'}},
-               {id:'9', title:'Magha', sign:'Gemini',deity:"Soma", degrees : '00:  00" 00\' to 13:10":20\'', mantras:{beej:'Om Rudraya Namaha'}},
-               {id:'10', title:'Purva Phalguni', sign:'Cancer',deity:"Soma", degrees : '00:  00" 00\' to 13:10":20\'', mantras:{beej:'Om Rudraya Namaha'}},
-               {id:'11', title:'Uttara Phalguni', sign:'Cancer',deity:"Soma", degrees : '00:  00" 00\' to 13:10":20\'', mantras:{beej:'Om Rudraya Namaha'}},
-               {id:'12', title:'Bharani', sign:'Cancer',deity:"Soma", degrees : '00:  00" 00\' to 13:10":20\'', mantras:{beej:'Om Rudraya Namaha'}},
-               {id:'13', title:'Bharani', sign:'Aries',deity:"Soma", degrees : '00:  00" 00\' to 13:10":20\'', mantras:{beej:'Om Rudraya Namaha'}},
-               {id:'14', title:'Bharani', sign:'Aries',deity:"Soma", degrees : '00:  00" 00\' to 13:10":20\'', mantras:{beej:'Om Rudraya Namaha'}},
-               {id:'15', title:'Bharani', sign:'Aries',deity:"Soma", degrees : '00:  00" 00\' to 13:10":20\'', mantras:{beej:'Om Rudraya Namaha'}},
-               {id:'16', title:'Bharani', sign:'Aries',deity:"Soma", degrees : '00:  00" 00\' to 13:10":20\'', mantras:{beej:'Om Rudraya Namaha'}},
-               {id:'17', title:'Bharani', sign:'Aries',deity:"Soma", degrees : '00:  00" 00\' to 13:10":20\'', mantras:{beej:'Om Rudraya Namaha'}},
-               {id:'18', title:'Bharani', sign:'Aries',deity:"Soma", degrees : '00:  00" 00\' to 13:10":20\'', mantras:{beej:'Om Rudraya Namaha'}},
-               {id:'19', title:'Bharani', sign:'Aries',deity:"Soma", degrees : '00:  00" 00\' to 13:10":20\'', mantras:{beej:'Om Rudraya Namaha'}},
-               {id:'20', title:'Bharani', sign:'Aries',deity:"Soma", degrees : '00:  00" 00\' to 13:10":20\'', mantras:{beej:'Om Rudraya Namaha'}},
-               {id:'21', title:'Bharani', sign:'Aries',deity:"Soma", degrees : '00:  00" 00\' to 13:10":20\'', mantras:{beej:'Om Rudraya Namaha'}},
-               {id:'22', title:'Shravana', sign:'Capricorn', rulerBySign:'Shani / Saturn', rulerByNakshatra: 'Moon / Chandra', deity:"Vishnu: helps us perceive truth concealed by through Maya", degrees : '10 00\' to 23:20\'', mantras:{beej:'Om Vishnave Namaha'}},
-               {id:'23', title:'Bharani', sign:'Aries',deity:"Soma", degrees : '00:  00" 00\' to 13:10":20\'', mantras:{beej:'Om Rudraya Namaha'}},
-               {id:'24', title:'Bharani', sign:'Aries',deity:"Soma", degrees : '00:  00" 00\' to 13:10":20\'', mantras:{beej:'Om Rudraya Namaha'}},
-               {id:'25', title:'Bharani', sign:'Aries',deity:"Soma", degrees : '00:  00" 00\' to 13:10":20\'', mantras:{beej:'Om Rudraya Namaha'}},
-               {id:'26', title:'Bharani', sign:'Aries',deity:"Soma", degrees : '00:  00" 00\' to 13:10":20\'', mantras:{beej:'Om Rudraya Namaha'}},
-               {id:'27', title:'Bharani', sign:'Aries',deity:"Soma", degrees : '00:  00" 00\' to 13:10":20\'', mantras:{beej:'Om Rudraya Namaha'}},
-&nbsp;
-               ]}
+        data={NAKSHATRAS_DATA}
         renderItem={renderItem}
         keyExtractor={item =&gt; item.id}
       /&gt;
@@ -493,7 +421,7 @@ export default NakshatraMantras;
             <div class='footer quiet pad2 space-top1 center small'>
                 Code coverage generated by
                 <a href="https://istanbul.js.org/" target="_blank">istanbul</a>
-                at Sun May 02 2021 17:51:31 GMT-0700 (Mountain Standard Time)
+                at Sat May 15 2021 07:03:57 GMT-0700 (Mountain Standard Time)
             </div>
         </div>
         <script src="../../prettify.js"></script>
