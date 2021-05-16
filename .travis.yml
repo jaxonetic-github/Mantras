@@ -9,6 +9,7 @@ install:
 - pip install -r requirements.txt
 
 script:
+  - codecov -t 'f9ed55e0-61be-4fb2-89d2-ff95feb0dea7'
  - coverage run -m unittest Mantras
 
 after_success:
