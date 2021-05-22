@@ -10,7 +10,7 @@ install:
 
 script:
   - codecov -t 'b1d01bc5-f6df-4594-b982-fca1e29dddd8'
- - coverage run -m unittest Mantras
+
 
 after_success:
  bash <(curl -s https://codecov.io/bash)

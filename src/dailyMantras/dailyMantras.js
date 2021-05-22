@@ -63,6 +63,7 @@ const data = [
 {id:6, day:'Saturday', graha:'Saturn / Shani', mantras:{beej:'\t\tOm Kraam Kreem Kraum Saha,\n\t\t\t\t Chandramase Namaha', alt:'Om Shanisaya Namaha', translation:'', historic:{mantra:'śaṁ no devīr abhiṣṭaya, āpo bhavantu pītaye, śaṁ yor abhisravantu naḥ', translation:'Goddess śam, we celebrate you! Let us drink your flowing waters. Śam, flow passionately to us, breaking the damns.'}}},
 ];
 
+
 const App: () => Node = () => {
   const isDarkMode = useColorScheme() === 'dark';
 
