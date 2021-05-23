@@ -1,16 +1,17 @@
 language: node_js 
 node_js:
-- 14.12.0
- before_install:
-- npm install -g codecov
+ - 14.12.0
+
+before_install:
+ - npm install -g codecov
 
 install:
-- pip install coverage
-- pip install -r requirements.txt
+ - pip install coverage
+ - pip install -r requirements.txt
 
 script:
-- codecov -t 'b1d01bc5-f6df-4594-b982-fca1e29dddd8'
+ - codecov -t 'b1d01bc5-f6df-4594-b982-fca1e29dddd8'
 
 
 after_success:
-- bash <(curl -s https://codecov.io/bash)
+ - bash <(curl -s https://codecov.io/bash)
