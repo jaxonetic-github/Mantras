@@ -4,7 +4,7 @@ node_js:
 
 before_install:
  - npm install -g codecov
-
+ - python -m pip install --upgrade pip
 install:
  - pip install coverage
  - pip install pytest-cov pytest
