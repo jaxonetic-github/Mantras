@@ -8,7 +8,6 @@ before_install:
 install:
  - pip install coverage
  - pip install pytest-cov pytest
- - pip install -r requirements.txt
 
 script:
  - codecov -t 'b1d01bc5-f6df-4594-b982-fca1e29dddd8'
